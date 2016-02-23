@@ -1,0 +1,1099 @@
+/*
+Theme Name: HealthCare
+Theme URI: http://themewagon.com/demo/HealthCare/
+Author: ThemeWagon
+Author URI: http://themewagon.com/
+Description: A responsive theme for commercial medical purpose. Built with HTML5, CSS3, Bootstrap framework. Google fonts, Font Awesome Icon integrated
+Version: 1.1.2014.11
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: responsive layout, multiple-page, parallax 
+Text Domain:
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1. - Home
+        1.1 - heading-slider
+        1.2 - starting-text
+        1.3 - reason for choice
+        1.4 - testimonial
+ * 2. - Service
+ * 3. - Doctor
+        3.1 - doctor-list
+        3.2 - job
+ * 4. - Blog
+ * 5. - FAQ
+ * 6. - Gallery
+ * 7. - Contact
+ * -----------------------------------------------------------------------------
+ */
+
+<style type="text/css">
+    #mc_embed_signup{background:#e6e6e6; clear:left; font:14px Abel;}
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file.                 Helvetica,Arial,sans-serif */
+</style>
+ * {outline: none !important;}
+
+
+/*============================================Global============================================ */
+
+
+ul li
+{
+    list-style: none;
+    display: inline-block;
+}
+li a
+{
+    text-decoration: none;
+
+
+}
+.form-control, .input-group-addon
+{
+    border-radius: 0px;
+}
+.title
+{
+    padding: 50px 0px;
+    margin-top: 65px
+}
+a 
+{
+    color: darkcyan;
+}
+a:hover
+{
+    text-decoration: none;
+}
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+}
+
+.pagination
+{
+    border-radius: 0px;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: #005587;
+    border-color: #A2A9AD;
+}
+.pagination>li>a, .pagination>li>span {
+
+color: #005587;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+p
+{
+    font-family: 'Dosis', sans-serif;
+    word-spacing: 3px;
+    font-size: 17px;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.send 
+{
+    margin-bottom: 20px;
+}
+
+.owl-pagination 
+{
+    display: none;
+}
+
+/* ----------------------------------------Header --------------------------------------------*/
+.section-title
+{
+    background: url(../img/6177817673_5ba53ffc2a_z.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    background-position: center;
+    color: #F0FEFF;
+}
+.section-title .headline
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.section-wrapper
+{
+    background-color: rgba(45, 53, 56, 0.1);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+
+
+.section-header{
+  font-size: 2em;
+  border-bottom: 1px dotted #ccc;
+  padding: 1em 0;
+}
+
+/* --------------------------------------  navs  ----------------------------------------------- */
+
+.logo
+{
+    font-family: 'Dosis', sans-serif;
+}
+.nav.navbar-nav 
+{
+    /* padding: 0px 20px; */
+}
+.navbar-default
+{
+    /*background-color: #267D90;*/
+    /*background-color: #46a1b4;*/
+    
+   
+}
+.navbar-default .navbar-header .logo
+{
+    font-size: 32px;
+    color: #fff;
+    
+}
+.navbar-nav li 
+{
+    /* border-right: 1px solid #54aec2; */
+    padding: 20px 0px;
+    }
+.navbar-default .navbar-nav li a 
+{
+    /*text-shadow: 1px 1px 0px #20606D;*/
+    color: #005587;
+    font-size: 17px;
+    /*color: #fff;*/
+    
+}
+.navbar-default .navbar-nav>.active
+{
+    /*background-color: rgba(5, 207, 252, 0.62);*/
+    background-color: rgba(76, 214, 245, 0.62);
+    border-top: 4px ridge rgb(5, 207, 252);
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus 
+{
+    color: #fff;
+}
+li:last-child 
+{
+    border-right: transparent;
+}
+.navbar-default .navbar-nav>li:hover, .navbar-default .navbar-nav>li:focus {
+    background-color: #005587;
+    color: white;
+    border-bottom: 4px ridge rgb(5, 207, 252);
+}
+.navbar-fixed-top .navbar-collapse
+{
+    /* max-height: 415px; */
+    
+        
+}
+.container-fluid 
+{
+    margin-left: 20px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus
+{
+    color: #fff;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.active:hover 
+{
+    background-color: rgba(5, 207, 252, 0.62);
+    border-bottom: none;
+}
+
+/* -------------------------------------------Sidebar------------------------------------------- */
+.blog-content aside .widget, .faq-content aside .widget
+{
+    margin-bottom: 40px;
+}
+.widget h4, 
+{
+    background: url("../img/title-bg.png") repeat-x scroll 0 4px rgba(0, 0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.widget.widget_iw_last_posts h5 
+{
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.widget h4 span, .special-service h2 span
+{
+    background: white;
+    padding-right: 10px;
+}
+.widget h5 
+{
+    text-transform: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.widget ul 
+{
+    padding-left: 0;
+    list-style: none;
+}
+.widget ul li 
+{
+    border-bottom: 1px solid #f3f3f3;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    list-style: none;
+    display: block;
+    padding: 10px 20px 10px 0;
+    position: relative;
+}
+.widget ul li:hover 
+{
+    background: #f8f8f8;
+    padding-left: 10px;
+}
+.widget ul li:hover a
+{
+    text-decoration: none;
+}
+.widget ul li:before 
+{
+    color: #646464;
+    content: "\f0da";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    font-size: 11px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.widget.widget_tag_cloud .tagcloud a 
+{
+    background-color: #eaeaea;
+    border: 1px solid #f3f3f3;
+    padding: 5px 10px;
+    margin: 0 3px 8px 0;
+    font-size: 14px !important;
+    display: inline-block;
+}
+/*----------------------------------------iframe---------------------------------------------*/
+iframe {
+  width: 100%;
+}
+
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51%;
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+
+/* ------------------------------------   appointment  ----------------------------------------- */
+
+.appointment
+{
+    background-color: #e6e6e6;
+}
+.appointment .header 
+{
+    background-color: #46a1b4;
+    min-height: 99px;
+    height: auto !important;
+    padding: 10px 23px 0px;
+    margin: 0px 0px 30px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.2)), to(rgba(0,0,0,0)));
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: -o-linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+    background-image: linear-gradient(top, rgba(255,255,255,.2), rgba(0,0,0,0));
+}
+.appointment .header h2, .appointment .header .number 
+{
+    text-shadow: 1px 1px 0px #20606D;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: normal;
+}  
+.appointment .header a i
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: #6DBEC2;
+    color: white;
+    padding-top: 3px;
+    padding-left: 6px;
+}
+.appointment .header .or 
+{
+    display: block;
+    width: 100%;
+    height: 35px;
+    background: url(../img/or-bg.png) center center no-repeat; 
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    top: 17px;
+}
+.captcha-container 
+{
+    margin: 0 0 20px;
+}
+.captcha-container img 
+{
+    vertical-align: top;
+    margin: 10px 0px;
+}
+.appointment .input-group
+{
+    padding: 10px 0px;
+}
+
+/* ========================================= 1. Home============================================= */
+
+
+/* -------------------------------------- 1.1 heading-slider---------------------------------------- */
+.slider-inner {
+  height: 600px;
+}
+
+.slider-inner 
+{
+    /*background-color: rgba(21, 7, 7, 0.55);*/
+    background-color: rgba(51, 71, 90, -9);
+    width: 100%;
+    color: white;
+ }
+
+.slider-inner-text
+{
+    margin: 262px 0px;
+    width: 50%
+}
+
+.slider-1
+{
+    background: url(../img/confianza.jpg);
+    width: 100%;
+    background-size: cover;
+    vertical-align: middle;
+    background-position-x: 75%;
+    background-position-y: 5%;
+}
+.slider-2
+{
+    background: url(../img/seguridad.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 65%;
+    background-position-y: 5%;
+}
+.slider-3
+{
+    background: url(../img/tecnologia.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 75%;
+    background-position-y: 5%;
+}
+
+.slider-4
+{
+    background: url(../img/experiencia.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 75%;
+    background-position-y: 5%;
+}
+
+.slider-5
+{
+    background: url(../img/servicio.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position-x: 75%;
+    background-position-y: 5%;
+}
+
+
+.slider-inner h1 
+{
+    margin-bottom: 35px;
+    font-size: 70px;
+}
+.slider-inner-text p
+{
+    font-size: 23px;
+}
+/*---------------------------------------------- 1.2 starting-text ----------------------------------*/
+
+section.starting-text 
+{
+    background-color: rgba(70, 161, 180, 0.82);
+    /*background: -webkit-linear-gradient(left top, #085A6C , #3E8B90);
+    background: -o-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: -moz-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: linear-gradient(to bottom right, #085A6C , #3E8B90); */
+    margin-top: -37px;
+}
+.welcome 
+{
+    padding: 48px 68px;
+    text-align: center;
+}
+.welcome-title 
+{
+    font-size: 50px;
+    padding-bottom: 15px;
+    /*color: #B0FFF6;*/
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px #083944;
+}
+.welcome-txt 
+{
+    font-size: 18px;
+    color: #fff;
+    line-height: 35px;
+    margin-bottom: 26px;
+    padding-top: 26px;
+    letter-spacing: 1px;
+}
+.welcome-btn
+{
+    background-color: #fff;
+    margin-top: 20px;
+    color: #46a1b4;
+    border-radius: 0px;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+    padding: 13px 20px;
+    border: 2px solid #fff;
+}
+.welcome-btn:hover 
+{
+    color: white;
+    background-color: #46a1b4;
+}
+/* ----------------------------------- 1.3 reason for choise------------------------------------ */
+
+.service-heading 
+{
+    padding: 20px 0px;
+    color: darkcyan;
+    font-size: 29px;
+}
+
+.service-img 
+{
+    opacity: 0.9;
+}
+/* .fa-facebook , .fa-twitter ,.fa-google-plus , .fa-instagram , .fa-pinterest , .fa-skype{
+
+    margin-top: 7px;
+} */
+.form-control {
+    height: 38px !important;
+}
+.hservice {
+    /*background: rgb(242, 247, 255);*/
+    background-color: rgba(185, 208, 240, 0.16);
+    border: 1px solid #CED8E7;
+    margin: 30px 0px;
+    padding-bottom: 30px;
+    transition: all 0.3s ease-in;
+}
+.hservice:hover 
+{
+    box-shadow: 0px 2px 3px 2px #CED8E7;
+}
+
+.hservice:hover .service-img 
+{
+    opacity: 1;
+}
+.service-description p 
+{
+    padding: 0px 10px;
+    line-height: 25px;
+}
+
+}
+/* ========================================= 2. Service=========================================== */
+#service-title
+{
+    background: url(../img/consultorio.jpg);
+}
+
+.service-title
+{
+    background: url(../img/consultorio.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    background-position: center;
+    color: #F0FEFF;
+}
+
+
+.service-title .headline 
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.service-wrapper
+{
+    /*background-color: rgba(45, 53, 56, 0.28);*/
+    background-color: rgba(70, 161, 180, 0.2);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+
+.service
+{
+    padding: 40px 20px;
+    transition: all 0.5s ease 0s;
+}
+.featured-service-content 
+{
+    margin: 40px 0px;
+}
+.service .service-icon img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #6DBEC2;
+    background: #fff;
+    color: #6DBEC2;
+}
+
+
+.about-service h3 
+{
+    padding: 12px 0px;
+    color: darkcyan;
+}
+
+.about-service p 
+{
+    padding: 0px 10px;
+}
+.service:hover .service-icon i
+{
+    color: white;
+    background-color: #6DBEC2;
+}
+.service:hover .about-service h3
+{
+    color: #02A2B6;
+}
+.special-service
+{
+    margin-top: 50px;
+}
+.service-tab 
+{
+    margin-top: 50px;
+}
+
+.service-item 
+{
+    padding: 30px 0px;
+}
+.service-item img 
+{
+    margin-bottom: 30px;
+}
+.service-item h3 
+{
+    color: darkcyan;
+    margin-top: 0px;
+}
+.service-item p 
+{
+    line-height: 25px;
+    padding: 10px 0px;
+}
+.special-service h2
+{
+    background: url("../img/title-bg.png") repeat-x scroll 0 13px rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.sub-headline 
+{
+    padding: 15px 0px 40px 0px;
+    font-size: 24px;
+}
+.headline 
+{
+    padding-top: 45px;
+    font-size: 45px;
+}
+.service-rm-btn
+{
+    background-color: transparent;
+    color: #46a1b4;
+    border-radius: 0px;
+    font-size: 15px;
+    transition: all 0.3s ease-in;
+    padding: 5px 12px;
+    margin: 4px 0px 0px 5px;
+    border-color: #46a1b4;
+}
+.service-rm-btn:hover
+{
+    /* background-color: #46a1b4; */
+    background-color: rgb(0, 139, 168);
+    color: #fff;
+    border-color: #3A90CD;
+}
+
+/*___________________________________Convenios---------------------------------------------*/
+
+.alliance .alliance-icon img
+{
+    
+    width: 50%;
+    height: 50%;
+    /*border-radius: 50%;
+    border: 2px solid #6DBEC2;
+    transition: all 0.7s ease 0s;+*/
+    background: #fff;
+    color: #6DBEC2;
+    padding-top: 38px;
+ } 
+
+ .alliance .alliance-icon-v img
+{
+    
+    width: 20%;
+    height: 20%;
+    /*border-radius: 50%;
+    border: 2px solid #6DBEC2;
+    transition: all 0.7s ease 0s;+*/
+    background: #fff;
+    color: #6DBEC2;
+    padding-top: 38px;
+ }   
+
+/* ========================================= 3. Doctor============================================ */
+
+/* ------------------------------------------  3.1 doctor-list --------------------------------- */
+.team-button {
+    margin-top: -60px;
+}
+#starting
+{
+    background: url(../img/equipo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#starting1
+{
+    background: url(../img/GalaDinner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.starting-wrapper
+{
+    background-color: rgba(0,0,0,0.17);
+    padding: 208px 0px;
+    color: #fff;
+}
+.main-title {
+    background-color: rgb(47, 79, 79);
+    display: inline-block;
+    padding: 23px 70px;
+    float: right;
+}
+.sub-title 
+{
+    padding: 30px;
+    float: right;
+    background-color: darkslategrey;
+}
+.doctor-list
+{
+    padding-top: 100px;
+}
+
+.doctor-meta
+{
+    margin: 100px 0px 70px 0px;
+    padding: 120px 35px 36px;
+    border: 1px solid rgba(59, 77, 116, 0.29);
+    background-color: rgba(92, 145, 216, 0.27);
+    position: relative;
+}
+.doctor-meta .doctor-img
+{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    margin-left: -95px;
+    border: 3px solid #c6c6c6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius:50%;
+    overflow: hidden;
+}
+.doctor-meta .doctor-img img
+{
+
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.doctor-info .doctor-name
+{
+    margin-top: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.doctor-info .position
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 1px;
+}
+.doctor-info .doctor-des
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.doctor-info .doctor-social .online-contact a
+{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background: cadetblue;
+    float: left;
+    color: white;
+    padding-top: 6px;
+    padding-left: 2px;
+}
+
+
+
+/* ========================================= 2. Alianzas=========================================== */
+.alliance-title
+{
+    background: url(../img/5501-world-map-1680x1050-digital-art-wallpaper.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    background-position: center;
+    color: #F0FEFF;
+}
+
+.alliance-title .headline 
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.alliance-wrapper
+{
+    /*background-color: rgba(45, 53, 56, 0.28);*/
+    background-color: rgba(70, 161, 180, 0.62);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+/* ========================================= 7. Contact========================================== */
+.contact-title
+{
+    background: url(../img/contacto.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    color: #F0FEFF;
+    background-position: center;
+}
+.contact-title .headline
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.contact-wrapper
+{
+    background-color: rgba(45, 53, 56, 0.2);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+.contact-content
+{
+    margin-top: 100px;
+}
+#map-canvas 
+{
+    width: 100%;
+    height: 460px;
+}
+.quick-contact i 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6DBEC2;
+    color: white;
+    padding-top: 12px;
+    padding-left: 14px;
+    font-size: 25px;
+}
+.quick-contact span 
+{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.quick-contact span 
+{
+    color: rgb(73, 77, 123);
+}
+.quick-contact {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.msg-form
+{
+    padding: 20px 16px;
+}
+.msg-form .input-group
+{
+    display: inline-table;
+    padding: 20px 0px;
+}
+
+/* ============================================Footer=========================================== */
+
+#footer
+{
+    /*background-color: #085A6C;*/
+    background-color: #46A1B4;
+    /*background: -webkit-linear-gradient(left top, #085A6C , #3E8B90);
+    background: -o-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: -moz-linear-gradient(bottom right, #085A6C , #3E8B90);
+    background: linear-gradient(to bottom right, #085A6C , #3E8B90); */
+    padding: 25px 0px;
+}
+.copy-right-text
+{
+    color: #fff;
+    font-size: 10px;
+    padding-top: 25px;
+}
+
+
+/* ----------------------------------- social media -------------------------------------------- */
+
+.contact 
+{
+    padding-top: 10px;
+    padding-left: 0px;
+}
+li.socials-icons 
+{
+    padding-left: 20px;
+}
+.socials-icons a
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* background: #6DBEC2; */
+    background-color: #49C1DC;
+    float: left;
+    color: white;
+    padding-top: 3px;
+    font-size: 20px;
+}
+.facebook:hover
+{
+    background-color: #46629E;
+    box-shadow: 0 0 0 2px #46629E;
+    color: white;
+}
+.twitter:hover
+{
+    background-color: #0EAACE;
+    box-shadow: 0 0 0 2px #0EAACE;
+    color: white;
+}
+.google-plus:hover
+{
+    background-color: #AF0000;
+    box-shadow: 0 0 0 2px #AF0000;
+    color: white;
+}
+.instagram:hover
+{
+    background-color: #3f729b;
+    box-shadow: 0 0 0 2px #3f729b;
+    color: white;
+}
+.pinterest:hover
+{
+    background-color: #CB2027;
+    box-shadow: 0 0 0 2px #CB2027;
+    color: white;
+}
+.skype:hover
+{
+    background-color: #01AEF2;
+    box-shadow: 0 0 0 2px #01AEF2;
+    color: white;
+}
+
+/* =========================================Media Query========================================= */
+
+
+
+@media (min-width: 1200px){
+    .navbar-collapse.collapse 
+    {
+        display: block!important;
+        height: auto!important;
+        /* padding: 10px 0px; */
+        overflow: visible!important;
+    }
+}
+    
+@media (min-width: 1400px){
+    .navbar-collapse 
+    {
+        width: auto;
+        border-top: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 991px){
+    .slider-inner-text {
+        margin: 162px 0px;
+    }
+}
+
+@media (max-width: 767px){
+    .slider-inner-text {
+        margin: 162px 58px;
+        width: 62%;
+    }
+}
+
+@media (max-width: 505px){
+    section.content main .info li:not(:last-child) 
+    {
+        margin: 0 27px 10px 0;
+    }   
+    section.content main .info li 
+    {
+        border: 0 !important;
+        display: inline;
+        margin: 0;
+        padding: 0px;
+    }
+    .slider-inner h1{
+        font-size: 50px;
+    }
+    .slider-inner-text {
+        margin: 162px 13px;
+    }
+    .slider-inner-text p
+    {
+        font-size: 19px;
+    }
+    .welcome {
+        padding: 48px 20px;
+    }
+}
+@media(max-width: 319px) {
+    .heading-slider {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar-brand{
+        float: none;
+    }
+    .logo{
+        width : 12rem;
+        padding: .5rem 0;
+    }
+}
+
+@media (min-width:1100px){
+
+    .starting-wrapper {
+    height: 650px;
+    }
+}
+
+@media (min-width: 600px ) {
+  .slider-inner {
+    height: 500px;
+  }
+}
+
+@media (min-width: 900px ) {
+  .slider-inner {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .starting {
+    background-image: url(img/equipo_movil.jpg);
+
+  }
+  .sub-title{
+    position: bottom;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .starting1 {
+    background-image: url(img/GalaDinner_movil.jpg);
+
+  }
+}
