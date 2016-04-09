@@ -839,6 +839,120 @@ section.starting-text
     padding: 78px 0px;
     margin-top: 65px;
 }
+/* ========================================== 5. Blog============================================= */
+.blog-content
+{
+    margin-top: 80px;
+}
+.blog-title
+{
+    background: url(../img/blue-abstract-background.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    color: #F0FEFF;
+    background-position: center;
+}
+.blog-title .headline
+{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+.blog-wrapper
+{
+    background-color: rgba(45, 53, 56, 0.62);
+    padding: 78px 0px;
+    margin-top: 65px;
+}
+.archive article 
+{
+    margin-bottom: 62px;
+}
+.archive h4 
+{
+    font-size: 25px;
+    word-spacing: 3px;
+}
+article h4 a
+{
+    color: cadetblue;
+}
+.img-padder 
+{
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+main .info 
+{
+    border-bottom: 1px dotted #eaeaea;
+    border-top: 1px dotted #eaeaea;
+    padding: 10px 0;
+    margin: 20px 0;
+    color: rgba(100, 100, 100, 0.8);
+}
+.list-inline 
+{
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+    text-align: center;
+}
+.blog-content main .info.list-inline li:not(:last-child) 
+{
+    border-right: 1px solid #eaeaea;
+}
+
+.blog-content main .info.list-inline li:first-child {
+    padding-left: 0px;
+}
+
+.blog-content main .info li 
+{
+    display: table-cell;
+    padding: 0 15px 0 15px;
+}
+
+main p {
+    line-height: 30px;
+}
+.rm-btn
+{
+    background-color: transparent;
+    margin-top: 20px;
+    color: #46a1b4;
+    border-radius: 0px;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+    padding: 13px 20px;
+    border-color: #46a1b4;
+}
+.rm-btn:hover
+{
+    background-color: #46a1b4;
+    color: #fff;
+    border-color: #3A90CD;
+}
+.blog-rm-btn 
+{
+    /* background-color: transparent; */
+    background-color: #46a1b4;
+    border-color: #A7D1D8;
+    /* color: #46a1b4; */
+    color: #fff;
+    border-radius: 0px;
+    transition: all 0.3s ease-in;
+}
+
+.blog-rm-btn:hover 
+{
+    /* background-color: #085A6C; */
+    background-color: darkcyan;
+    color: #fff;
+    border-color: #3A90CD;
+}
+
 /* ========================================= 7. Contact========================================== */
 .contact-title
 {
